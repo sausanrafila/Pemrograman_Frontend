@@ -1,0 +1,101 @@
+/* Small Screen */
+.container {
+    margin: 1rem;
+    text-align: center;
+    
+  }
+  
+.Addform__title{
+    color: blue;
+}
+.Addform {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Poppins',sans-serif;
+    margin: 1rem;
+}
+
+.Addform__button{
+    padding: 0.8rem 1.5rem;
+    border-radius: 10px;
+    border: none;
+    background-color: #f72585;
+    color: white;
+    margin-bottom: 1rem;
+    margin-top: 30px;
+
+
+}
+
+
+.Addform__image{
+    max-width: 5000px;
+    border-radius: 25px;
+    justify-content: center;
+    margin-top: 15%;
+}
+
+
+.Addform__right {
+    margin: 1rem;
+   
+}
+.Addform__left {
+    margin-bottom: 1rem;
+}
+
+
+
+.Addform__control {
+    margin: 30px 0;
+    margin-bottom: 1rem;
+}
+
+.Addform__inputone input[type='text'],
+.Addform__inputtwo input[type='date'] {
+    height: 30px;
+    width: 55%;
+    margin-bottom: 1rem;
+    border-style: ridge;
+    border-radius: 5px;
+    border-color: #4361ee;
+}
+
+.Addform__right input:focus {
+    outline: none;
+}
+
+
+
+
+/* Large Screen */
+@media (min-width: 992px) {
+    .container{
+        text-align: center;
+        max-width: 1200px;
+        margin: 3rem auto;
+    }
+
+
+    .Addform{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+
+    .Addform__left{
+        flex-basis: 0%;
+        padding: 25px;
+        justify-content: center;
+    }
+
+    .Addform__right{
+        flex-basis: 50%;
+       
+       
+    }
+}
