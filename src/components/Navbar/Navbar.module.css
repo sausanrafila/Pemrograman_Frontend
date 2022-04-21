@@ -1,0 +1,44 @@
+/* small screen */
+.navbar{
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    background-color:#EF476F ;
+    padding: 0.5rem 1rem;
+    color: #fff;
+}
+
+.navbar__brand h1{
+    font-weight: 600;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.navbar__list{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+/* medium screen */
+@media (min-width: 768px){
+    .navbar{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar__brand{
+        margin-bottom: 0;
+    }
+
+    .navbar__list{
+        flex-direction: row;
+    }
+
+    .navbar__item{
+        margin:0 1rem;
+    }
+}
